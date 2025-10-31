@@ -1,7 +1,4 @@
-# agentic-coffee-ordering-app-with-Firebase-and-Google-Cloud.
-Brew wants More: An AI-powered coffee ordering app built with Angular, Firebase Genkit, Vertex AI (Gemini Models), Cloud Run, Firestore, and Cloud Storage.
-
-# ☕🤖 Building an Agentic Coffee App with Firebase & Google Cloud
+## ☕🤖 Building an Agentic Coffee App with Firebase & Google Cloud
 
 This comprehensive guide walks you through creating an **agentic AI coffee-ordering app** using **Firebase**, **Vertex AI Gemini models**, and **Google Cloud**.  
 Learn how to combine conversational intelligence with real-time data to build delightful, production-ready AI experiences.  
@@ -25,12 +22,12 @@ Learn how to combine conversational intelligence with real-time data to build de
 
 ---
 
-## 🎬 Demo Video
+### 🎬 Demo Video
 ▶️ [Watch on YouTube](#) *(Coming soon)*  
 
 ---
 
-## 📋 Table of Contents
+### 📋 Table of Contents
 - [Overview](#overview)  
 - [Technologies You’ll Learn](#technologies-youll-learn)  
 - [Architecture](#architecture)  
@@ -43,7 +40,7 @@ Learn how to combine conversational intelligence with real-time data to build de
 
 ---
 
-## 🌟 Overview
+### 🌟 Overview
 **Brew Maange More** blends your love for coffee and AI by building an intelligent barista that:  
 ☕ Chats with you naturally  
 🧠 Learns your taste over time  
@@ -54,7 +51,7 @@ Inspired by the movie *Dil Maange More* — because, really, **your heart (and c
 
 ---
 
-## 🧠 Technologies You’ll Learn
+### 🧠 Technologies You’ll Learn
 | Technology | Icon | Description |
 |-------------|:----:|-------------|
 | **Angular** | ![Angular](external-assets/angular.svg) | Build a responsive web UI for the coffee barista chat |
@@ -66,7 +63,7 @@ Inspired by the movie *Dil Maange More* — because, really, **your heart (and c
 
 ---
 
-## ⚙️ Architecture
+### ⚙️ Architecture
 ```
 [Angular Frontend] → Firebase Auth + Firestore
 ↓
@@ -81,7 +78,7 @@ Inspired by the movie *Dil Maange More* — because, really, **your heart (and c
 
 ---
 
-## 🛠️ Setup & Installation
+### 🛠️ Setup & Installation
 ```bash
 # 1 Clone the repo
 git clone https://github.com/yourusername/brew-maange-more.git
@@ -95,7 +92,7 @@ ng serve
 # App runs at http://localhost:4200
 ```
 
-**## 🔁 AI Flow**
+**### 🔁 AI Flow**
 
 User: “Surprise me with something chocolatey.”
 Vertex AI Agent → suggestDrink()
@@ -103,19 +100,19 @@ Agent creates plan: createOrder → confirmPayment → schedulePickup
 Cloud Run executes steps securely & updates Firestore
 Angular UI updates in real time
 
-## 🔒 Security Best Practices
+### 🔒 Security Best Practices
 
 - Firebase Auth for user login
 - Firestore rules to protect user data
 - Sensitive keys stored in Secret Manager
 - Cloud Functions with IAM-based roles
 
-## 🌈 Future Improvements
+### 🌈 Future Improvements
 
-Voice ordering capability
-Google Pay integration
-Mood-based drink recommendations
-Loyalty rewards system
+- Voice ordering capability
+- Google Pay integration
+- Mood-based drink recommendations
+- Loyalty rewards system
 
 “Building agentic experiences, one coffee at a time.” ☕🤖
 
