@@ -6,12 +6,16 @@ Brew wants More: An AI-powered coffee ordering app built with Angular, Firebase 
 This comprehensive guide walks you through creating an **agentic AI coffee-ordering app** using **Firebase**, **Vertex AI Gemini models**, and **Google Cloud**.  
 Learn how to combine conversational intelligence with real-time data to build delightful, production-ready AI experiences.  
 
+<div align="center">
+  
 [![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/)
 [![Vertex AI](https://img.shields.io/badge/Vertex_AI-34A853?logo=googlecloud&logoColor=white)](https://cloud.google.com/vertex-ai)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)](https://angular.dev/)
 [![Genkit](https://img.shields.io/badge/Firebase_Genkit-FF6D00?logo=firebase&logoColor=white)](https://firebase.google.com/genkit)
 [![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/run)
+
+</div>
 
 > *“Build agents that don’t just respond — they plan, act, and make your coffee just the way you like it.”* ☕💡  
 
