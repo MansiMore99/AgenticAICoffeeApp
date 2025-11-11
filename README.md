@@ -26,30 +26,14 @@ Learn how to combine conversational intelligence with real-time data to build de
 ▶️ [Watch on YouTube](#) *(Coming soon)*  
 
 ---
+This is a demo app that shows how to build an agent-driven beverage ordering system using Firebase and Google Cloud.
 
-### 📋 Table of Contents
-- [Overview](#overview)  
-- [Technologies You’ll Learn](#technologies-youll-learn)  
-- [Architecture](#architecture)  
-- [Setup & Installation](#setup--installation)  
-- [Firestore Schema](#firestore-schema)  
-- [AI Flow](#ai-flow)  
-- [Security Best Practices](#security-best-practices)  
-- [Future Improvements](#future-improvements)  
-- [License & Credits](#license--credits)  
+**Explore the demo and its underlying concepts in more detail on the solutions page at https://developers.google.com/solutions/learn/agentic-barista**
 
----
+AI Barista is an intelligent chatbot application designed to simulate a coffee shop ordering experience. Users can interact with an AI agent to place beverage orders, ask for recommendations, and confirm their selections.
 
-### 🌟 Overview
-**Brew Maange More** blends your love for coffee and AI by building an intelligent barista that:  
-☕ Chats with you naturally  
-🧠 Learns your taste over time  
-⚡ Handles orders & payments autonomously  
-📲 Syncs everything in real time with Firestore  
-
-Inspired by the movie *Dil Maange More* — because, really, **your heart (and coffee) always want more**.
-
----
+*This project is intended for demonstration purposes only. It is not
+intended for use in a production environment.*
 
 ### 🧠 Technologies You’ll Learn
 | Technology | Icon | Description |
@@ -75,14 +59,12 @@ Inspired by the movie *Dil Maange More* — because, really, **your heart (and c
 ↓
 [Firestore & Cloud Storage]
 ```
-
 ---
 
 ### 🛠️ Setup & Installation
 ```bash
 # 1 Clone the repo
-git clone https://github.com/yourusername/brew-maange-more.git
-cd brew-maange-more
+git clone https://github.com/MansiMore99/AgenticAICoffeeApp.git
 
 # 2 Install dependencies
 npm install
@@ -94,27 +76,7 @@ ng serve
 
 **### 🔁 AI Flow**
 
-User: “Surprise me with something chocolatey.”
-Vertex AI Agent → suggestDrink()
-Agent creates plan: createOrder → confirmPayment → schedulePickup
-Cloud Run executes steps securely & updates Firestore
-Angular UI updates in real time
 
-### 🔒 Security Best Practices
-
-- Firebase Auth for user login
-- Firestore rules to protect user data
-- Sensitive keys stored in Secret Manager
-- Cloud Functions with IAM-based roles
-
-### 🌈 Future Improvements
-
-- Voice ordering capability
-- Google Pay integration
-- Mood-based drink recommendations
-- Loyalty rewards system
-
-“Building agentic experiences, one coffee at a time.” ☕🤖
 
 ---
 
