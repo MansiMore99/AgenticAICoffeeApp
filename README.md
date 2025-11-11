@@ -34,17 +34,8 @@ AI Barista is an intelligent chatbot application designed to simulate a coffee s
 *This project is intended for demonstration purposes only. It is not
 intended for use in a production environment.*
 
-### 🧠 Technologies You’ll Learn
-| Technology | Icon | Description |
-|-------------|:----:|-------------|
-| **Angular** | ![Angular](external-assets/angular.svg) | Build a responsive web UI for the coffee barista chat |
-| **Firebase Genkit** | ![Genkit](external-assets/firebase-genkit.svg) | Define and orchestrate your agentic logic |
-| **Vertex AI (Gemini Models)** | ![Vertex AI](external-assets/vertex-ai.svg) | Power natural-language reasoning and planning |
-| **Cloud Run** | ![Cloud Run](external-assets/cloud-run.svg) | Host secure backend microservices and agent tools |
-| **Cloud Firestore** | ![Firestore](external-assets/firebase-firestore.svg) | Store user data, preferences, and order history |
-| **Cloud Storage for Firebase** | ![Storage](external-assets/firebase-storage.svg) | Manage images, menu assets, and media files |
+<img width="2142" height="1340" alt="image" src="https://github.com/user-attachments/assets/78f2318d-8ad5-4d65-905c-fb3ec7428a46" />
 
----
 
 ### ⚙️ Architecture
 ```
@@ -58,6 +49,9 @@ intended for use in a production environment.*
 ↓
 [Firestore & Cloud Storage]
 ```
+---
+### 🧠 Technologies You’ll Learn
+<img width="686" height="726" alt="image" src="https://github.com/user-attachments/assets/207b4a57-4410-45ee-9a05-c008d66ae82d" />
 ---
 
 ### 🛠️ Setup & Installation
