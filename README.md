@@ -17,8 +17,7 @@ Learn how to combine conversational intelligence with real-time data to build de
 > *“Build agents that don’t just respond — they plan, act, and make your coffee just the way you like it.”* ☕💡  
 
 ---
-
-![Hero Image](https://github.com/yourusername/brew-maange-more/assets/hero-banner.png)
+![blog_img](https://github.com/user-attachments/assets/965a3856-b20c-4aa1-9fee-8d25d4dfea53)
 
 ---
 
