@@ -1,5 +1,31 @@
-# AI Barista: Agent-powered Barista App
+## ☕🤖 Building an Agentic Coffee App with Firebase & Google Cloud
 
+This comprehensive guide walks you through creating an **agentic AI coffee-ordering app** using **Firebase**, **Vertex AI Gemini models**, and **Google Cloud**.  
+Learn how to combine conversational intelligence with real-time data to build delightful, production-ready AI experiences.  
+
+<div align="center">
+  
+[![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/)
+[![Vertex AI](https://img.shields.io/badge/Vertex_AI-34A853?logo=googlecloud&logoColor=white)](https://cloud.google.com/vertex-ai)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)](https://angular.dev/)
+[![Genkit](https://img.shields.io/badge/Firebase_Genkit-FF6D00?logo=firebase&logoColor=white)](https://firebase.google.com/genkit)
+[![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?logo=googlecloud&logoColor=white)](https://cloud.google.com/run)
+
+</div>
+
+> *“Build agents that don’t just respond — they plan, act, and make your coffee just the way you like it.”* ☕💡  
+
+---
+
+![Hero Image](https://github.com/yourusername/brew-maange-more/assets/hero-banner.png)
+
+---
+
+### 🎬 Demo Video
+▶️ [Watch on YouTube](#) *(Coming soon)*  
+
+---
 This is a demo app that shows how to build an agent-driven beverage ordering system using Firebase and Google Cloud.
 
 **Explore the demo and its underlying concepts in more detail on the solutions page at https://developers.google.com/solutions/learn/agentic-barista**
@@ -9,134 +35,71 @@ AI Barista is an intelligent chatbot application designed to simulate a coffee s
 *This project is intended for demonstration purposes only. It is not
 intended for use in a production environment.*
 
-## Try it out today
+### 🧠 Technologies You’ll Learn
+| Technology | Icon | Description |
+|-------------|:----:|-------------|
+| **Angular** | ![Angular](external-assets/angular.svg) | Build a responsive web UI for the coffee barista chat |
+| **Firebase Genkit** | ![Genkit](external-assets/firebase-genkit.svg) | Define and orchestrate your agentic logic |
+| **Vertex AI (Gemini Models)** | ![Vertex AI](external-assets/vertex-ai.svg) | Power natural-language reasoning and planning |
+| **Cloud Run** | ![Cloud Run](external-assets/cloud-run.svg) | Host secure backend microservices and agent tools |
+| **Cloud Firestore** | ![Firestore](external-assets/firebase-firestore.svg) | Store user data, preferences, and order history |
+| **Cloud Storage for Firebase** | ![Storage](external-assets/firebase-storage.svg) | Manage images, menu assets, and media files |
 
-We recommend trying out this project in Firebase Studio. Click this button to launch the project in Firebase Studio and follow the steps below to get started.
+---
 
-<a href="https://studio.firebase.google.com/import?url=https%3A%2F%2Fgithub.com%2FFirebaseExtended%2Fsolution-ai-barista">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://cdn.firebasestudio.dev/btn/try_dark_32.svg">
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://cdn.firebasestudio.dev/btn/try_light_32.svg">
-    <img
-      height="32"
-      alt="Try in Firebase Studio"
-      src="https://cdn.firebasestudio.dev/btn/try_blue_32.svg">
-  </picture>
-</a>
-
-### Prerequisites
-
-1. A new Firebase project
-   - *We recommended using a new Firebase project for this demo. This [simplifies cleanup](#delete-and-clean-up-deployed-services) to avoid incurring on-going costs after trying out this demo app.*
-1. [Activate billing on your Google Cloud / Firebase Project](https://console.cloud.google.com/billing/linkedaccount?project=_)
-1. [Enable the Anonymous authentication sign-in method](https://firebase.google.com/docs/auth/web/anonymous-auth#before-you-begin) for your project.
-   1. You may chose to upgrade your project and enable automatic clean-up of old accounts.
-1. Create a default Firestore database by navigating to **Firestore** in the console.
-1. [Enable Vertex AI and recommended APIs](https://console.cloud.google.com/vertex-ai) in the Google Cloud console.
-
-> [!NOTE]
-> Enabling billing and deploying services may incur a cost. Follow the steps under [Delete and clean up deployed services](#delete-and-clean-up-deployed-services) to remove any deployed services after trying out this demo.
-
-### Getting started in Firebase Studio
-
-1. Open the project in Firebase Studio.
-1. When prompted, select your Firebase project.
-1. Log into Firebase Hosting. Navigate to the "Firebase Studio" screen and select "Authenticate". Follow the prompts in the terminal.
-1. Prepare your Firebase project by setting up security rules, TTL configuration and functions for cleaning up data:
-   1. Select a Firebase project: `firebase use`.
-   2. Deploy Firestore, Storage and Functions: `firebase deploy --only firestore,storage,functions`
-   3. Follow any additional prompts to set up access and grant permissions.
-   4. You may need to grant the *Logs Writer* permission.
-1. Configure Firebase for the Angular frontend app.
-   1. Navigate to the Firebase console, create a new web client and donwload the configuration file for your project.
-   1. Add the configuration into the file `client/web/angular-customer-app/src/environments/environment.development.ts`.
-1. The app is now ready! Switch to the **Web Preview** to see it in action.
-
-### Getting started locally
-
-You can run the application locally and access Firebase and Google Cloud directly.
-
-#### Local Prerequisites
-
-1. Set up the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk).
-1. Set up the [Firebase CLI](https://firebase.google.com/docs/cli).
-1. Set up [Application Default Credentials (ADC) for a local development environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment)
-
-Follow the steps in [services/cloud-run](services/cloud-run), [client/web/angular-customer-app](client/web/angular-customer-app) and [services/local-recommendation](services/local-recommendation) to run each component.
-
-## Demo and code overview
-
-This project consists of two main parts:
-
-* [client/web/angular-customer-app](client/web/angular-customer-app/): The frontend customer ordering app, built with Angular.
-* [services/cloud-run/](services/cloud-run/): The backend, built with Genkit, Vertex AI, Firestore, Clound Run and Cloud Storage for Firebase.
-
-Two additional systems provide some additional services:
-
-* [services/functions](services/functions/): Cloud Functions for Firebase to handle clean up of data stored in Cloud Storage.
-* [services/local-recommendation](services/local-recommendation/): A simple HTTP-service that returns a drink recommendation from a fixed list of beverages.
-
-## Demo walkthrough and examples
-
-Once the application is up and running, talk to the agent to assemble and submit a beverage order.
-
-Here are some example messages to try.
-
-### Orders
-
-```text
-I want to order a latte with oat milk and double shots.
-Add 1 latte, regular milk, 1 shot, no sweeteners to the order.
-Order a cappucino with almond milk and extra sugar.
-I'd like a decaf almond cappuccino, double shots with chocolate sauce.
-Add a cortado with with quadruple shots, iced, regular milk and a Matcha Latte with extra foam, hazelnut sauce and sugar free vanilla sweetener.
-Order 1 latte with oat milk, 2 shots and a latte, regular milk, 1 shot with sugar.
+### ⚙️ Architecture
 ```
-
-### Updating orders
-
-```text
-Actually, instead of the Latte I'd like an espresso. Make it extra hot.
-I want oat milk instead.
-Clear my order and let me start again.
+[Angular Frontend] → Firebase Auth + Firestore
+↓
+[Firebase Genkit Flows]
+↓
+[Vertex AI Gemini Agent]
+↓
+[Cloud Run / Cloud Functions APIs]
+↓
+[Firestore & Cloud Storage]
 ```
+---
 
-### Order submission and status check
-
-```text
-What's my order?
-Submit my order
-```
-
-## Deploying the app
-
-You can deploy the backend and the frontend directly from Firebase Studio. Follow the on the "Firebase Studio" screen to deploy the app to Google Cloud Run and Firebase Hosting.
-
-Don't forget to deploy Cloud Functions and the Storage and Firestore configurations:
-
+### 🛠️ Setup & Installation
 ```bash
-firebase deploy --only firestore,storage,functions
+# 1 Clone the repo
+git clone https://github.com/MansiMore99/AgenticAICoffeeApp.git
+
+# 2 Install dependencies
+npm install
+
+# 3 Run Angular locally
+ng serve
+# App runs at http://localhost:4200
 ```
 
-See [services/cloud-run](services/cloud-run) and [client/web/angular-customer-app](client/web/angular-customer-app) for more details and manual deployment steps.
+**### 🔁 AI Flow**
 
 
-## Delete and clean up deployed services
 
-To avoid continued billing for the resources that you have created as part of trying out this demo app, delete the Firebase project or disable the deployed services.
+---
 
-If you have created a new project to test this app, follow [these steps to delete the project](https://support.google.com/firebase/answer/9137886?hl=en) through the Firebase console.
+#### 📬 Let’s Connect
+Have feedback, questions, or want to contribute? Feel free to reach out or fork the project!
+Feel free to reach out and follow me on social media:
 
-Alternatively, if you followed the steps to deploy Cloud Firestore, Functions and Cloud Storage for Firebase to an existing project, follow these steps to remove them manually through the console:
-* [Delete data from Cloud Firestore](https://firebase.google.com/docs/firestore/using-console#delete_data)
-* [Delete Cloud Functions](https://firebase.google.com/docs/functions/manage-functions?gen=2nd#delete_functions)
-* [Delete Cloud Storage](https://firebase.google.com/docs/storage/manage-stored-files#delete)
-* [Delete Cloud Run services](https://cloud.google.com/run/docs/managing/services#delete)
+<p align="center">
+  <a href="https://www.linkedin.com/in/mansimore9/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/MansiMore99">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://medium.com/@mansi.more943">
+    <img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
+  </a>
+  <a href="https://x.com/MansiMore99">
+    <img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="X (Twitter)" />
+  </a>
+  <a href="https://www.youtube.com/@tech_girl-m9">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+  </a>
+</p>
 
-## Additional Information
-
-This app is not an officially supported Google Product.
+<sub>MIT License © 2025 Mansi</sub>
